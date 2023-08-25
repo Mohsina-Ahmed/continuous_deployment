@@ -11,7 +11,7 @@ FROM python:3.11.0
 # We run a command to install `pipenv`
 RUN pip install pipenv
 
-# We run a command to install `psycopg`
+# We run a command to install `psycopg` in the docker
 RUN pip install psycopg
 
 # We'll need our app's files in the container in order to be able to run them!
