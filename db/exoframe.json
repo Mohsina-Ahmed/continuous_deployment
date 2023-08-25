@@ -1,0 +1,10 @@
+{
+  "name": "Mohsina-message-database",
+  "domain": false,
+  "hostname": "Mohsina-message-database",
+  "image": "postgres:12",
+  "env": {
+    "POSTGRES_PASSWORD": "@Mohsina-postgres-password"
+  },
+  "volumes": ["Mohsina_message_database_volume:/var/lib/postgresql/data"]
+}
