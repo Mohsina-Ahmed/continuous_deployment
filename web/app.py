@@ -53,6 +53,10 @@ setup_database(POSTGRES_URL)
 app = Flask(__name__)
 
 # Below are two fairly ordinary Flask routes
+@app.route("/welcome")
+def get_welcome():
+    return "Welcome to my deployment!"
+
 
 @app.route("/")
 def get_messages():

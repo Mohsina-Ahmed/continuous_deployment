@@ -1,4 +1,4 @@
 def test_get_home(web_client):
-    response = web_client.get("/")
+    response = web_client.get("/welcome")
     assert response.status_code == 200
-    assert response.data.decode("utf-8") == "I am CI/CD hero! I am doing another check through github deployment."
+    assert response.data.decode("utf-8") == "Welcome to my deployment!"
