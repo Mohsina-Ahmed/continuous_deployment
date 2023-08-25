@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def get_home():
-    return "I am CI/CD hero!"
+    return "I am CI/CD hero! I am doing another check through github deployment."
 
 if __name__ == '__main__':
     app.run(
