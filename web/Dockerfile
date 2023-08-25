@@ -11,6 +11,9 @@ FROM python:3.11.0
 # We run a command to install `pipenv`
 RUN pip install pipenv
 
+# We run a command to install `psycopg`
+RUN pip install psycopg
+
 # We'll need our app's files in the container in order to be able to run them!
 # We copy them in from the current directory to the folder `/app` in
 # our virtual computer. Reminder `.` means 'the current directory'
